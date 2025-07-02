@@ -1,9 +1,8 @@
-import { axios } from "axios";
-
-export const API_KEY = '6b1cc5572fb6573143caa44d1503dc1f';
+import axios from "axios";
+import { API_KEY, BaseUrl } from "../config/env";
 
 export const axiosInstance = axios.create({
-    baseUrl: `https://openweathermap.org/data/2.5/weather`,
+    baseUrl: BaseUrl,
     timeout: 5000,
     Headers: {
          "Content-Type" : "application/json",
