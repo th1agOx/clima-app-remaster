@@ -1,7 +1,26 @@
+/*
+* configuração global voltada a otimização do backend sem evitando overengineering
+*/
+
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2022", "DOM"],
+    "allowJs": false,
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,            
+    "isolatedModules": true,   
+    
+    "verbatimModuleSyntax": false,   
+    "noEmit": true
+  },
+    "include": ["src", "tests", "env.ts"],
+    "exclude": ["node_modules", "dist", "build"]
 }
