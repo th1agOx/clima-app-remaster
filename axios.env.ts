@@ -3,6 +3,8 @@
 *   Pressupõe-se que o certificado esteja salvo em uma variavel de sistemas ou no local de instalação do node 
 *   Certificado já confiavel em ..\src\config\env.ts
 */
+
+
 import "dotenv/config"
 import axios from "axios"
 

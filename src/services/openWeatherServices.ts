@@ -5,7 +5,7 @@ import axios from 'axios';
 export async function getWeatherByCity(city: string): Promise<WeatherApiResponse | undefined> {
     try {
         const response = await axiosInstance.get<WeatherApiResponse>('/weather', {
-            params: { q: city}
+            params: { q: city }
         });
         console.log("dados climáticos:", response.data)
         return response.data;
