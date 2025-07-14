@@ -1,3 +1,4 @@
+// Estrutura de logs default 
 export function handleApiError(error) {
     if (error.response) {
         console.error('[API ERROR][Response]', error.response.status, error.response.data )

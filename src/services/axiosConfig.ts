@@ -41,5 +41,3 @@ axiosInstance.interceptors.response.use(
         return Promise.reject(error);
     }
 )
-
-//adicionar token JWT automático para autenticações futuras, Retry automático em falhas de rede, refresh token automático 

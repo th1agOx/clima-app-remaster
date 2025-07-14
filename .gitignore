@@ -1,17 +1,14 @@
-# JS ECOSYSTEM
+# JS 
 node_modules
-tsconfig.app.json
 tsconfig.node.json
 vite.config.ts
-eslint.config.js
 tsconfig.json
-jest.config.js
+package-lock.json
+tsconfig.app.json
 
-# PYTHON ECOSYSTEM
+# PYTHON 
 venv
 log
-database
 
 # GLOBAL
 .env
-package-lock.json

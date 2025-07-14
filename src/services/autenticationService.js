@@ -1,1 +1,0 @@
-// POST / DELETE pro backend Flask futuramente, API que vai integrar ao futuro banco 
