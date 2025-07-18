@@ -1,19 +1,18 @@
 from pydantic import BaseModel, EmailStr
-from .jwt import token_response, access_danied
 
-class AuthRequest(BaseModel):
+class LoginRequest(BaseModel):
     username: str
     password: str
 
 
 class TokenResponse(BaseModel):
-    token: token_response
+    token: str
 
 
 class UserResponse(BaseModel):
     id: int
     username: str
-    email: EmailStr
+    email: EmailStr 
 
 
 class AuthSuccessResponse(BaseModel):
@@ -22,4 +21,17 @@ class AuthSuccessResponse(BaseModel):
 
 
 class AuthErrorResponse(BaseModel):
-    detail: access_danied
+    detail: str
+
+
+class UserRecoveryRequest(BaseModel):
+    email: EmailStr
+
+
+class UserRecreateRequest(BaseModel):
+    username: str
+
+    
+class PasswordResetRequest(BaseModel):
+    new_password: str
+    recovery_code: str

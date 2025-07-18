@@ -1,7 +1,6 @@
 /*
 * configuração global voltada a otimização do backend sem evitando overengineering
 */
-
 {
   "compilerOptions": {
     "target": "ES2022",
@@ -21,6 +20,6 @@
     "verbatimModuleSyntax": false,   
     "noEmit": true
   },
-    "include": ["src", "tests", "env.ts"],
+    "include": ["src", "tests", "env.ts", "backend/app/utils"],
     "exclude": ["node_modules", "dist", "build"]
 }

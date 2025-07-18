@@ -5,6 +5,7 @@ vite.config.ts
 tsconfig.json
 package-lock.json
 tsconfig.app.json
+vite-env.d.ts
 
 # PYTHON 
 venv
